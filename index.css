@@ -703,7 +703,7 @@ table {
         margin-top: 40px;
         background-color: #e4e4e4;
         width:85vw;
-        height:300px;
+        height:fit-content;
     }
     
     #bgimg {
