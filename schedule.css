@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+/* Universal Styles */
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+/* Header and Navbar */
+#schooltxt {
+    margin-top: -25px;
+    z-index: 10;
+}
+
+#V {
+    font-size: 40px;
+    font-family: dm-serif-text;
+    font-weight: bold;
+}
+
+#headertext {
+    font-size: 30px;
+    font-family: dm-serif-text;
+    font-weight: bold;
+    z-index: 10;
+}
+#headertxt {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: dm-serif-text;
+    z-index: 10;
+}
+#header {
+    top:0;
+    background-color: rgb(178, 2, 2);
+    color: rgb(255, 255, 110);
+    padding: 50px;
+    z-index: 10;
+    margin-top:40px;
+    width: 100vw;
+    height: 120px;
+    text-align: center;
+    position:fixed;
+    /* background-image: image-set("background.jpeg"); */
+
+}
+
+#topBlack {
+    top:0;
+    height: 30px;
+    padding:10px;
+    background-color: rgb(20, 19, 19);
+    position: fixed;
+    color: white;
+    margin-top: 10px;
+    width: 100vw;
+    z-index: 10;
+    text-align: right;
+}
+
+#homelink {
+    top:0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#topYellow{
+    top:0;
+    height: 10px;
+    background-color: yellow;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+
+#btmYellow{
+    top:0;
+    z-index: 10;
+    height: 10px;
+    background-color: yellow;
+    width: 100vw;
+    position: fixed;
+    margin-top: 160px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.099);
+}
+
+#logo {
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: -30px;
+} 
+
+.menu {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    margin-top: 10px;
+    transform: translate(0, 5px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+#menudrop {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    width: 180px;
+    right: 20px;
+    top: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 35px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menuElement {
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menuElement:hover {
+    background-color: whitesmoke;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c2c2c2; 
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8d8d8d; 
+  }
+
+
+  /* unique styles for schedule.html */
+
+
+  #content {
+    position: absolute;
+    margin-left: 70px;
+    width:90vw;
+    margin-top: 220px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    font-size: 20px;
+    padding:20px;
+    text-align: center;
+}
+
+#scheduleTable {
+    color: white;
+    position: absolute;
+    margin-left: 70px;
+    width:90vw;
+    overflow-y: hidden;
+    height: 670px;
+    margin-top: 300px;
+    border: 1px white solid;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    font-size: 20px;
+    padding:20px;
+    text-align: center;
+}
+
+#background {
+    width:100vw;
+    height:200vh;
+    margin-left: -10px;
+    object-fit:fill;
+    object-position: center;
+    margin-top: 150px;
+}
+
+#backgroundtop {
+    position:absolute;
+    background-color: rgba(25, 0, 0, 0.734);
+    height:200vh;
+    width: 100vw;
+    margin-left: -10px;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        -webkit-tap-highlight-color: transparent;
+    }
+    #content {
+        margin-left: 0px;
+        width: 100vw;
+        margin-top: 140px;
+    }
+
+    #scheduleTable {
+        margin-left: 0px;
+        width: 100vw;
+        margin-top: 290px;
+    }
+
+    #background {
+        margin-top: 130px;
+    }
+    #backgroundtop {
+        margin-top: 130px;
+    }
+
+    #schooltxt {
+        margin-top: -45px;
+        z-index: 10;
+    }
+    
+    #V {
+        font-size: 30px;
+        font-family: dm-serif-text;
+        font-weight: bold;
+    }
+    
+    #headertext {
+        font-size: 20px;
+        font-family: dm-serif-text;
+        font-weight: bold;
+        z-index: 10;
+    }
+    #headertxt {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: dm-serif-text;
+        z-index: 10;
+    }
+    #header {
+        top:0;
+        background-color: rgb(178, 2, 2);
+        color: rgb(255, 255, 110);
+        padding: 50px;
+        z-index: 10;
+        margin-top:40px;
+        width: 100vw;
+        height: 100px;
+        text-align: center;
+        position:fixed;
+    
+    }
+    
+    #topBlack {
+        top:0;
+        height: 30px;
+        padding:10px;
+        background-color: rgb(20, 19, 19);
+        position: fixed;
+        color: white;
+        margin-top: 10px;
+        width: 100vw;
+        z-index: 10;
+        text-align: right;
+    }
+    
+    #homelink {
+        top:0;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    
+    #topYellow{
+        top:0;
+        height: 10px;
+        background-color: yellow;
+        width: 100vw;
+        position: fixed;
+        z-index: 10;
+    }
+    
+    #btmYellow{
+        top:0;
+        z-index: 10;
+        height: 10px;
+        background-color: yellow;
+        width: 100vw;
+        position: fixed;
+        margin-top: 140px;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.099);
+    }
+    
+    #logo {
+        height: 60px;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -30px;
+    } 
+    
+    .menu {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 2px;
+        background-color: #000000;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        margin-top: 10px;
+        transform: translate(0, 5px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+    
+    
+    #menudrop {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 20;
+        width: 180px;
+        right: 20px;
+        top: 50px;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 35px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .menuElement {
+        color: black;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .menuElement:hover {
+        background-color: whitesmoke;
+    }
+    
+}
